@@ -8,13 +8,11 @@
 name: Build_x86_64
 
 on: 
-  release:
-    types: [published]
-    
-# Add a button to trigger the workflow - Kuroko
-on: 
   repository_dispatch:
   workflow_dispatch:
+  
+  release:
+    types: [published]
 
   #push:
   #  branches: 
